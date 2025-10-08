@@ -64,7 +64,7 @@ python run_tablegpt_agent.py \
 ```
 
 #### Perturbed Program Generation
-
+### Permutation Metamorphic Relation (PMR)
 - **PMR1: Shuffle**
 ```bash
 python run_tablegpt_agent.py \
@@ -107,7 +107,7 @@ python run_reconstruction_tablegpt_agent.py \
 
 ---
 
-### Data Modification Rules (DMR)
+### Decomposition Metamorphic Relation (DMR)
 
 - **DMR1**
 ```bash
@@ -131,7 +131,7 @@ python run_tablegpt_agent_c_cut.py \
 
 ---
 
-### Semantic Modification Rules (SMR)
+### Semantic Metamorphic Relation (SMR)
 
 - **SMR1**
 ```bash
@@ -170,7 +170,7 @@ python ./evaluate_agent_all_type.py
 
 - **Recall, Precision, F1 Score**
 ```bash
-python hhh_wtq.py
+python ./evaluate_robustness.py
 ```
 
 ---
