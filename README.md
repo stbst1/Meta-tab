@@ -30,7 +30,7 @@ pip install -r requirements.txt
 Extract the dataset:
 
 ```bash
-unzip data/data.zip -d path/to/data
+unzip assets/data.zip -d path/to/data
 ```
 
 ### 2. Model Setup
