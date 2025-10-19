@@ -55,6 +55,9 @@ python run_tablegpt_agent.py \
 ```
 
 #### Intermediate Program Generation (Perturbed)
+---
+
+### Permutation Metamorphic Relations (PMR)
 
 - **PMR1: Shuffle**
 ```bash
@@ -98,7 +101,7 @@ python run_reconstruction_tablegpt_agent.py \
 
 ---
 
-### Data Modification Rules (DMR)
+### Decomposition Metamorphic Relations (DMR)
 
 - **DMR1**
 ```bash
@@ -122,7 +125,7 @@ python run_tablegpt_agent_c_cut.py \
 
 ---
 
-### Semantic Modification Rules (SMR)
+### Semantic Metamorphic Relations (SMR)
 
 - **SMR1**
 ```bash
@@ -171,6 +174,10 @@ python hhh_wtq.py
 - PyTorch  
 
 ---
+
+## Results
+
+We include the predictions of MetaTab in our dataset and its ablation results in the ```outputs/``` folder.  
 
 ## Results
 
