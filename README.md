@@ -179,6 +179,3 @@ python hhh_wtq.py
 
 We include the predictions of MetaTab in our dataset and its ablation results in the ```outputs/``` folder.  
 
-## Results
-
-We include the predictions of MetaTab in our dataset and its ablation results in the ```outputs/``` folder.  
