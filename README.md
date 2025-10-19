@@ -1,8 +1,8 @@
-# Meta-Tab
+# MetaTab
 
-This is the guide released for the paper *"Exploring and Evaluating the Robustness of Tabular Language Models via Metamorphic Testing."*  
+This is the guide released for the paper *"Evaluating the Robustness of Tabular Language Models via Metamorphic Testing."*  
 
-![Meta-Tab Illustration](METATAB1.png)
+![MetaTab Illustration](METATAB1.png)
 
 ---
 
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 Extract the dataset:
 
 ```bash
-unzip assets/data.zip -d path/to/data
+unzip data/data.zip -d path/to/data
 ```
 
 ### 2. Model Setup
@@ -40,19 +40,10 @@ Set up language models such as TableGPT and TableLLM locally:
 - **TableGPT**: https://huggingface.co/tablegpt/TableGPT2-7B  
 - **TableLLM**: https://huggingface.co/RUCKBReasoning/TableLLM-7b  
 
-### 3. Example Illustration
 
-Below is an example illustration from Meta-Tab:  
+### 3. Step-by-Step Example with TableGPT
 
-![Meta-Tab Illustration](METATAB2.png)  
-
-We take **TableGPT** as an example below.  
-
----
-
-### Program Generation
-
-#### Original Program Generation
+#### Intermediate Program Generation (Original)
 
 ```bash
 python run_tablegpt_agent.py \
@@ -63,8 +54,8 @@ python run_tablegpt_agent.py \
     --log_dir output/wtq_agent --cache_dir cache/gpt-3.5
 ```
 
-#### Perturbed Program Generation
-### Permutation Metamorphic Relation (PMR)
+#### Intermediate Program Generation (Perturbed)
+
 - **PMR1: Shuffle**
 ```bash
 python run_tablegpt_agent.py \
@@ -107,7 +98,7 @@ python run_reconstruction_tablegpt_agent.py \
 
 ---
 
-### Decomposition Metamorphic Relation (DMR)
+### Data Modification Rules (DMR)
 
 - **DMR1**
 ```bash
@@ -131,7 +122,7 @@ python run_tablegpt_agent_c_cut.py \
 
 ---
 
-### Semantic Metamorphic Relation (SMR)
+### Semantic Modification Rules (SMR)
 
 - **SMR1**
 ```bash
@@ -161,7 +152,7 @@ python run_tablegpt_agent.py \
 
 ---
 
-## Evaluate
+## Evaluation
 
 - **Error Rate**
 ```bash
@@ -170,7 +161,7 @@ python ./evaluate_agent_all_type.py
 
 - **Recall, Precision, F1 Score**
 ```bash
-python ./evaluate_robustness.py
+python hhh_wtq.py
 ```
 
 ---
@@ -183,4 +174,4 @@ python ./evaluate_robustness.py
 
 ## Results
 
-We include the predictions of Meta-Tab in our dataset and its ablation results in the ```outputs/``` folder.  
+We include the predictions of MetaTab in our dataset and its ablation results in the ```outputs/``` folder.  
